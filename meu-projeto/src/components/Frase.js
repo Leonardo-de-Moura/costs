@@ -1,6 +1,8 @@
+import styles from "./Frase.module.css"
 function Frase(){
+
 	return (
-		<div>
+		<div className={styles.FraseContainer}>
 			<p>
 				este é meu componente
 			</p>
