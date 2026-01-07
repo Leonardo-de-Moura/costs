@@ -1,19 +1,23 @@
+import Button from "./Button.js"
 
+function Evento() {
 
-function Evento (){
-
-	function MeuEvento(){
-		alert("ativado completamente")
+	function MeuEvento() {
+		alert("ativado ")
+	}
+	function segundoEvento() {
+		alert("segundo evt")
 	}
 	return (
 		<>
-		<p>
-			Clique pra disparar o evento:
-		</p>
-		<button onClick={MeuEvento}>
-			ativar
-		</button>
+			<p>
+				Clique pra disparar o evento:
+			</p>
+			
+			<Button event={MeuEvento} text="primeiro evento" />
+			<Button event={segundoEvento} text="segundo evento" />
+
 		</>
 	)
- }
- export default Evento
+}
+export default Evento
